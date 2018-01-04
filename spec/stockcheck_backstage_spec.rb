@@ -18,11 +18,10 @@ require './lib/item.rb'
       expect {subject.update_quality(item)}.to change {item.quality}.by(1)
      end
      it 'increases quality by 2 when sell in under 10 but over 5' do
-      expect {subject.update_quality(nine_days)}.to change {item.quality}.by(2)
+      expect {subject.update_quality(nine_days)}.to change {nine_days.quality}.by(2)
      end
      it 'increases quality by 3 when sell in under 5 but over 0' do
-       p subject.five_days(four_days)
-      expect {subject.update_quality(four_days)}.to change {item.quality}.by(3)
+      expect {subject.update_quality(four_days)}.to change {four_days.quality}.by(3)
      end
      it 'sets quality to 0 when sell in at 0' do
        subject.update_quality(zero_days)
