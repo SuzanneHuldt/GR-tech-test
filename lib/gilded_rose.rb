@@ -1,66 +1,20 @@
 class GildedRose
-
-  def initialize
-    @items
-  end
-
-  def set_items(items)
+  attr_accessor :brie, :conjured, :sulfaras, :passes
+  def initialize(items)
     @items = items
+    @brie = []
+    @conjured = []
+    @sulfaras = []
+    @passes = []
+    @typical = []
   end
 
-  def update_sell_in(item)
-      item.sell_in -= 1 unless sell_by_today(item)
+  def filter(items)
+    @brie = items.select {|item| item.name == 'Aged Brie'}
+    @conjured = items.select {|item| item.name == 'Conjured'}
+    @sulfaras = items.select {|item| item.name == 'Sulfuras, Hand of Ragnaro'}
+    @passes = items.select {|item| item.name == 'Backstage passes to a TAFKAL80ETC concert'}
   end
 
-  def sell_by_today(item)
-    item.sell_in == 0
-  end
 
-  def update_quality()
-    @items.each do |item|
-      if item.name != "Aged Brie" and item.name != "Backstage passes to a TAFKAL80ETC concert"
-        if item.quality > 0
-          if item.name != "Sulfuras, Hand of Ragnaros"
-            item.quality = item.quality - 1
-          end
-        end
-      else
-        if item.quality < 50
-          item.quality = item.quality + 1
-          if item.name == "Backstage passes to a TAFKAL80ETC concert"
-            if item.sell_in < 11
-              if item.quality < 50
-                item.quality = item.quality + 1
-              end
-            end
-            if item.sell_in < 6
-              if item.quality < 50
-                item.quality = item.quality + 1
-              end
-            end
-          end
-        end
-      end
-      if item.name != "Sulfuras, Hand of Ragnaros"
-        item.sell_in = item.sell_in - 1
-      end
-      if item.sell_in < 0
-        if item.name != "Aged Brie"
-          if item.name != "Backstage passes to a TAFKAL80ETC concert"
-            if item.quality > 0
-              if item.name != "Sulfuras, Hand of Ragnaros"
-                item.quality = item.quality - 1
-              end
-            end
-          else
-            item.quality = item.quality - item.quality
-          end
-        else
-          if item.quality < 50
-            item.quality = item.quality + 1
-          end
-        end
-      end
-    end
-  end
 end
