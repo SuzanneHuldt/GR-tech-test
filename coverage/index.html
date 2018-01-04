@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-04T15:31:32+00:00">2018-01-04T15:31:32+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-01-04T17:30:18+00:00">2018-01-04T17:30:18+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.37%</span></span>
+    (<span class="covered_percent"><span class="green">90.91%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         6.52
+         2.01
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>3</b> files in total.
-    <b>38</b> relevant lines. 
-    <span class="green"><b>37</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>4</b> files in total.
+    <b>66</b> relevant lines. 
+    <span class="green"><b>60</b> lines covered</span> and
+    <span class="red"><b>6</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,33 +51,43 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#4d5030e5414b3937444c7d19e4595205a6fd8179" class="src_link" title="lib/gilded_rose.rb">lib/gilded_rose.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>18</td>
-        <td>14</td>
-        <td>14</td>
-        <td>0</td>
-        <td>9.3</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#6ffb390c686ade767cf2f4baea416fb889e4a2f1" class="src_link" title="lib/item.rb">lib/item.rb</a></td>
         <td class="yellow strong">87.5 %</td>
         <td>13</td>
         <td>8</td>
         <td>7</td>
         <td>1</td>
-        <td>9.9</td>
+        <td>4.3</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#bf3c4c37120a8b6760899bb181159ddf2a34aabe" class="src_link" title="spec/gildedrose_spec.rb">spec/gildedrose_spec.rb</a></td>
+        <td class="strong"><a href="#d4afcc64931c8a1865eec3e5119d92bacb9a1afe" class="src_link" title="lib/stockcheck.rb">lib/stockcheck.rb</a></td>
+        <td class="red strong">72.73 %</td>
+        <td>21</td>
+        <td>11</td>
+        <td>8</td>
+        <td>3</td>
+        <td>1.1</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#51a01e4e0d6d84c05567bde5e0030ee086826f74" class="src_link" title="lib/stockcheck_backstage.rb">lib/stockcheck_backstage.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>29</td>
-        <td>16</td>
-        <td>16</td>
+        <td>24</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
-        <td>2.4</td>
+        <td>2.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2cf64ee8aa5b4fb6cb5a20a83d1209b710879362" class="src_link" title="spec/stockcheck_backstage_spec.rb">spec/stockcheck_backstage_spec.rb</a></td>
+        <td class="green strong">94.29 %</td>
+        <td>59</td>
+        <td>35</td>
+        <td>33</td>
+        <td>2</td>
+        <td>1.6</td>
       </tr>
       
     </tbody>
@@ -95,133 +105,6 @@
       </div>
     
       <div class="source_files">
-      
-        <div class="source_table" id="4d5030e5414b3937444c7d19e4595205a6fd8179">
-  <div class="header">
-    <h3>lib/gilded_rose.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class GildedRose</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  attr_accessor :brie, :conjured, :sulfaras, :passes</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def initialize(items)</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="4">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @items = items</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @brie = []</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="6">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @conjured = []</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="7">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @sulfaras = []</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="8">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @passes = []</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="9">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @typical = []</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def filter(items)</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="13">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    @brie = items.select {|item| item.name == &#39;Aged Brie&#39;}</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="14">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    @conjured = items.select {|item| item.name == &#39;Conjured&#39;}</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="15">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    @sulfaras = items.select {|item| item.name == &#39;Sulfuras, Hand of Ragnaro&#39;}</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="16">
-          <span class="hits">24</span>
-          
-          <code class="ruby">    @passes = items.select {|item| item.name == &#39;Backstage passes to a TAFKAL80ETC concert&#39;}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
       
         <div class="source_table" id="6ffb390c686ade767cf2f4baea416fb889e4a2f1">
   <div class="header">
@@ -261,20 +144,20 @@
           <code class="ruby">  def initialize(name, sell_in, quality)</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="5">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="10" data-linenumber="5">
+          <span class="hits">10</span>
           
           <code class="ruby">    @name = name</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="6">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="10" data-linenumber="6">
+          <span class="hits">10</span>
           
           <code class="ruby">    @sell_in = sell_in</code>
         </li>
       
-        <li class="covered" data-hits="25" data-linenumber="7">
-          <span class="hits">25</span>
+        <li class="covered" data-hits="10" data-linenumber="7">
+          <span class="hits">10</span>
           
           <code class="ruby">    @quality = quality</code>
         </li>
@@ -320,13 +203,158 @@
 </div>
 
       
-        <div class="source_table" id="bf3c4c37120a8b6760899bb181159ddf2a34aabe">
+        <div class="source_table" id="d4afcc64931c8a1865eec3e5119d92bacb9a1afe">
   <div class="header">
-    <h3>spec/gildedrose_spec.rb</h3>
+    <h3>lib/stockcheck.rb</h3>
+    <h4><span class="red">72.73 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Stockcheck</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def stock_check(item)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    update_sell_in(item)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    update_quality(item)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update_sell_in(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      item.sell_in -= 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sell_by_today(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="15">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    item.sell_in == 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update_quality(item)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">    sell_by_today(item) ? item.quality -= 2 : item.quality -= 1 unless item.quality == 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="51a01e4e0d6d84c05567bde5e0030ee086826f74">
+  <div class="header">
+    <h3>lib/stockcheck_backstage.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -337,7 +365,170 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">require &#39;./lib/gilded_rose.rb&#39;</code>
+          <code class="ruby">require &#39;stockcheck.rb&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class StockcheckBackstage &lt; Stockcheck</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update_quality(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="6">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    quality_reset(item) if sell_by_today(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    ten_days(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="8">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    five_days(item)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def ten_days(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="12">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    5 &lt; item.sell_in &amp;&amp; item.sell_in &lt;=10</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def five_days(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="16">
+          <span class="hits">6</span>
+          
+          <code class="ruby">    0 &lt; item.sell_in &amp;&amp; item.sell_in &lt;= 5</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def quality_reset(item)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    item.quality = 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2cf64ee8aa5b4fb6cb5a20a83d1209b710879362">
+  <div class="header">
+    <h3>spec/stockcheck_backstage_spec.rb</h3>
+    <h4><span class="green">94.29 %</span> covered</h4>
+    <div>
+      <b>35</b> relevant lines. 
+      <span class="green"><b>33</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;./lib/stockcheck_backstage.rb&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
@@ -346,40 +537,40 @@
           <code class="ruby">require &#39;./lib/item.rb&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">describe GildedRose do</code>
+          <code class="ruby"> describe StockcheckBackstage do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="5" data-linenumber="4">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">   let(:item) {Item.new(&#39;Backstage passes to a TAFKAL80ETC concert&#39;, 11, 5)}</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="6">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
-          <code class="ruby">  let(:items) {[Item.new(&#39;Backstage passes to a TAFKAL80ETC concert&#39;, 5, 5),</code>
+          <code class="ruby">   let(:nine_days) {Item.new(&#39;Backstage passes to a TAFKAL80ETC concert&#39;, 9, 5)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
+          <code class="ruby">   let(:four_days) {Item.new(&#39;Backstage passes to a TAFKAL80ETC concert&#39;, 4, 5)}</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="7">
+          <span class="hits">3</span>
           
-          <code class="ruby">     Item.new(&#39;Aged Brie&#39;, 5, 3), Item.new(&#39;Sulfuras, Hand of Ragnaro&#39;, 5, 5), Item.new(&#39;Conjured&#39;, 5, 5), Item.new(&#39;duck&#39;, 5, 5)]</code>
+          <code class="ruby">   let(:zero_days) {Item.new(&#39;Backstage passes to a TAFKAL80ETC concert&#39;, 0, 5)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">   }</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -388,124 +579,304 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="10">
-          <span class="hits">6</span>
-          
-          <code class="ruby">  let(:gilded_rose) {GildedRose.new(items)}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;#filter&#39; do</code>
+          <code class="ruby">   describe &#39;#update sell in&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;#filters brie into brie array&#39; do</code>
+          <code class="ruby">     it &#39;reduces sell in by 1&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="14">
+        <li class="covered" data-hits="4" data-linenumber="12">
           <span class="hits">4</span>
           
-          <code class="ruby">      expect {gilded_rose.filter(items)}.to change {gilded_rose.brie.length}.by(1)</code>
+          <code class="ruby">       expect {subject.update_sell_in(item)}.to change {item.sell_in}.by(-1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;#filters conjured items into conjured array&#39; do</code>
+          <code class="ruby">   describe &#39;#update quality&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      expect {gilded_rose.filter(items)}.to change {gilded_rose.conjured.length}.by(1)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;#filters sulfuras into the sulfuras array&#39; do</code>
+          <code class="ruby">     it &#39;increases quality by 1 when sell in over 10&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="20">
+        <li class="covered" data-hits="4" data-linenumber="18">
           <span class="hits">4</span>
           
-          <code class="ruby">      expect {gilded_rose.filter(items)}.to change {gilded_rose.sulfaras.length}.by(1)</code>
+          <code class="ruby">      expect {subject.update_quality(item)}.to change {item.quality}.by(1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">     end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;#filters passes into the passes array&#39; do</code>
+          <code class="ruby">     it &#39;increases quality by 2 when sell in under 10 but over 5&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="23">
+        <li class="covered" data-hits="4" data-linenumber="21">
           <span class="hits">4</span>
           
-          <code class="ruby">      expect {gilded_rose.filter(items)}.to change {gilded_rose.passes.length}.by(1)</code>
+          <code class="ruby">      expect {subject.update_quality(nine_days)}.to change {item.quality}.by(2)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">     end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;#filters all non-exceptional items into an array&#39; do</code>
+          <code class="ruby">     it &#39;increases quality by 3 when sell in under 5 but over 0&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="26">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
           
-          <code class="ruby">      expect {gilded_rose.filter(items)}.to change {gilded_rose.typical.length}.by(1)</code>
+          <code class="ruby">       p subject.five_days(four_days)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="covered" data-hits="4" data-linenumber="25">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      expect {subject.update_quality(four_days)}.to change {item.quality}.by(3)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">     end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &#39;sets quality to 0 when sell in at 0&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       subject.update_quality(zero_days)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(zero_days.quality).to eq(0)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &#39;#ten days&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &#39;returns true if the pass in the in the ten day quality block&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(subject.ten_days(nine_days)).to be(true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &#39;#five days&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &#39;returns true if the pass in the in the five day quality block&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(subject.five_days(four_days)).to be(true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &#39;#sell by today&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     it &#39;returns true for zero days item&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       expect(subject.sell_by_today(zero_days)).to be(true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   describe &#39;#stockcheck&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     xit &#39;increase quality by 1&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="53">
+          
+          
+          <code class="ruby">       expect {subject.stock_check(item)}.to change {item.quality}.by(1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">     xit &#39;decrease sell in by 1&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
+          
+          
+          <code class="ruby">       expect {subject.stock_check(item)}.to change {item.sell_in}.by(-1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby"> end</code>
         </li>
       
     </ol>

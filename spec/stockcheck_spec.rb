@@ -93,4 +93,13 @@ describe Stockcheck do
       expect {subject.update_sell_in(item)}.to change {item.sell_in}.by(0)
     end
   end
+
+  shared_examples "stockcheck" do
+    let(:stockcheck) {Stockcheck.new}
+    context 'it decreases the sell_in by 1' do
+      xit 'returns a sell_in value lowered by 1' do
+
+      end
+    end
+  end
 end

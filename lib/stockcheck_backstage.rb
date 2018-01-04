@@ -3,15 +3,20 @@ require 'stockcheck.rb'
 class StockcheckBackstage < Stockcheck
 
   def update_quality(item)
-    case item.sell_in
-    when 0
-      item.quality = 0
-    when >= 11
-      item.quality += 1
-    when 5> <11
-      item.quality += 2
-    when 0> <5
-      item.quality += 3
+    quality_reset(item) if sell_by_today(item)
+    
+  end
+
+  def ten_days(item)
+    5 < item.sell_in && item.sell_in <=10
+  end
+
+  def five_days(item)
+    0 < item.sell_in && item.sell_in <= 5
+  end
+
+  def quality_reset(item)
+    item.quality = 0
   end
 
 

@@ -2,9 +2,9 @@ class Stockcheck
   def initialize
   end
 
-  def stock_check(items)
-    update_sell_in
-    update_quality
+  def stock_check(item)
+    update_sell_in(item)
+    update_quality(item)
   end
 
   def update_sell_in(item)

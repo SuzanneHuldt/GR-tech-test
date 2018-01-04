@@ -1,5 +1,5 @@
 class GildedRose
-  attr_accessor :brie, :conjured, :sulfaras, :passes
+  attr_accessor :brie, :conjured, :sulfaras, :passes, :typical
   def initialize(items)
     @items = items
     @brie = []

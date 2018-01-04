@@ -22,8 +22,5 @@ describe GildedRose do
     it '#filters passes into the passes array' do
       expect {gilded_rose.filter(items)}.to change {gilded_rose.passes.length}.by(1)
     end
-    it '#filters all non-exceptional items into an array' do
-      expect {gilded_rose.filter(items)}.to change {gilded_rose.typical.length}.by(1)
-    end
   end
 end
