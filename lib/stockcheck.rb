@@ -3,8 +3,9 @@ class Stockcheck
   end
 
   def stock_check(item)
-    update_sell_in(item)
+
     update_quality(item)
+    update_sell_in(item)
   end
 
   def update_sell_in(item)

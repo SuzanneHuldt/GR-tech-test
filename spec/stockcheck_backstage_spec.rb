@@ -48,10 +48,11 @@ require './lib/item.rb'
    end
 
    describe '#stockcheck' do
-     xit 'increase quality by 1' do
+     it 'increase quality by 1' do
+       p item
        expect {subject.stock_check(item)}.to change {item.quality}.by(1)
      end
-     xit 'decrease sell in by 1' do
+     it 'decrease sell in by 1' do
        expect {subject.stock_check(item)}.to change {item.sell_in}.by(-1)
      end
    end
