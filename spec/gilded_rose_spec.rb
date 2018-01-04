@@ -12,45 +12,74 @@ describe GildedRose do
     end
   end
 
+  describe '#update sell-in value' do
+    it 'decreases sell-in value by 1' do
+      item = Item.new('test', 5, 5)
+      expect {subject.update_sell_in(item)}.to change {item.sell_in}.by(-1)
+    end
+      it 'does not allow the sell-in value to fall below 0' do
+      item = Item.new('test', 0, 0)
+      expect {subject.update_sell_in(item)}.to change {item.sell_in}.by(0)
+    end
+  end
+
+  describe '#sell by today' do
+    it 'returns true if the sell-in value is zero' do
+      item = Item.new('test', 0, 0)
+      expect(subject.sell_by_today(item)).to be(true)
+    end
+  end
+
   describe '#update quality value (decrease) - before sell-by' do
-    it 'decreases the quality of typical items by 1' do
+    xit 'decreases the quality of typical items by 1' do
+
 
     end
-    it 'decreases the quality of conjured items by 2' do
+    xit 'decreases the quality of conjured items by 2' do
 
     end
   end
 
   describe '#update quality value (decrease) - after sell-by' do
-    it 'decreases the quality of typical items by 2' do
+    xit 'decreases the quality of typical items by 2' do
 
     end
-    it 'decreases the quality of conjured items by 4' do
+    xit 'decreases the quality of conjured items by 4' do
 
     end
   end
 
   describe '#update quality value (increase)' do
-    it 'raises the value of brie by 1' do
+    xit 'raises the value of brie by 1' do
 
     end
   end
 
   describe '#update quality value (increase) backstage pass condition' do
-    it 'increases the quality by 2 with <= 10 days until concert' do
+    xit 'increases the quality by 2 with <= 10 days until concert' do
 
     end
-    it 'increases the quality by 3 with <= 5 days until concert' do
+    xit 'increases the quality by 3 with <= 5 days until concert' do
 
     end
-    it 'sets quality to zero when concert has passed' do
+    xit 'sets quality to zero when concert has passed' do
 
     end
   end
 
   describe '#maximum value' do
-    it 'does not allow the value of any item to exceed 50' do
-      
+    xit 'does not allow the value of any item to exceed 50' do
+
+    end
+  end
+
+
+  describe '#sulfuras conditions' do
+    xit 'does not alter the quality value' do
+
+    end
+    xit 'does not alter the sell in value' do
+
     end
   end
 

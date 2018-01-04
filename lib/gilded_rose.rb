@@ -1,7 +1,19 @@
 class GildedRose
 
-  def initialize(items)
+  def initialize
+    @items
+  end
+
+  def set_items(items)
     @items = items
+  end
+
+  def update_sell_in(item)
+      item.sell_in -= 1 unless sell_by_today(item)
+  end
+
+  def sell_by_today(item)
+    item.sell_in == 0
   end
 
   def update_quality()
